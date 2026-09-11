@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, serif; color: #fff; background: #111827; }
+header { padding: 2rem; text-align: center; background: #172554; }
+header h1 { font-size: 2.5rem; }
+nav { position: sticky; top: 0; z-index: 5; padding: 1rem; text-align: center; background: #0f172a; }
+nav a { margin: 0 1rem; color: white; text-decoration: none; font-weight: bold; }
+section { min-height: 60vh; padding: 12vh 10%; display: flex; align-items: center; }
+section h2 { font-size: 3rem; margin-top: 0; }
+section p { max-width: 700px; font-size: 1.2rem; line-height: 1.8; }
+.linear { background: linear-gradient(120deg, #1e3a8a, #7e22ce, #be123c); }
+.radial { background: radial-gradient(circle at center, #92400e, #451a03 65%, #1c1917); }
+.parallax {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: center;
+  text-align: center;
+}
+.one { background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("https://placehold.co/1600x900/334155/ffffff?text=Mathura+Streets"); }
+.two { background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("https://placehold.co/1600x900/475569/ffffff?text=Heritage"); }
+.parallax div { padding: 3rem; background: rgba(0,0,0,.45); border: 2px solid rgba(255,255,255,.5); }
+footer { padding: 2rem; text-align: center; background: #020617; }

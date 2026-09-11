@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #0f172a; }
+header {
+  position: fixed; top: 0; left: 0; width: 100%; height: 64px;
+  z-index: 10; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between;
+  background: #0f172a; color: white;
+}
+.layout { display: flex; padding-top: 64px; min-height: 100vh; }
+aside {
+  position: fixed; left: 0; top: 64px; bottom: 0; width: 220px;
+  padding: 2rem 1rem; background: #1e293b; display: flex; flex-direction: column; gap: .5rem;
+}
+aside a { padding: 1rem; color: white; text-decoration: none; border-radius: 8px; }
+aside a:hover { background: #334155; }
+main { margin-left: 220px; padding: 2.5rem; width: calc(100% - 220px); }
+.boxes { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.boxes section {
+  flex: 1 1 calc(50% - 1.5rem); min-height: 180px;
+  padding: 2rem; background: white; border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(15,23,42,.1);
+}
+@media (max-width: 700px) {
+  .layout { flex-direction: column; }
+  aside { position: static; width: 100%; height: auto; flex-direction: row; flex-wrap: wrap; }
+  main { margin-left: 0; width: 100%; }
+  .boxes section { flex-basis: 100%; }
+}

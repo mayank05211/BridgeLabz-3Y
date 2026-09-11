@@ -8,7 +8,8 @@ h1::before{
     width: 60px;
     height: 3px;
     background-color: red;
-    top: 35px;
+    top: 50px;
+    transition: width 1s ease;
 }
 
 h1::first-letter{
@@ -16,6 +17,52 @@ h1::first-letter{
     color: blue;
 }
 
-h1::hover::first-letter{
+h1:hover::before{
+    width: 1000px;
+}
+
+h1:hover::first-letter{
     color: red;
+}
+
+.btn{
+    margin: 30px 50px;
+    position: relative;
+}
+
+.btn::after{
+    position: absolute;
+    content: "This is a butten";
+    width: 120px;
+    height: 25px;
+    background-color: rgb(212, 0, 255);
+    color:white;
+    padding: 5px;
+    bottom: 25px;
+    left: 20px;
+    opacity: 0;
+}
+
+.btn:hover::after{
+    opacity: 1;
+}
+
+.btn::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    bottom: 25px;
+    left: 30px;
+    opacity: 0;
+}
+
+.btn:hover::after{
+    opacity: 1;
+}
+
+.btn:hover::before{
+    opacity: 1;
 }

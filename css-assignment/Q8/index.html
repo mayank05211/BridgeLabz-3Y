@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>CSS Box Model</h1>
+    <div class="demo">
+      <div class="margin-layer">
+        <span class="label margin-label">MARGIN</span>
+        <div class="border-layer">
+          <span class="label border-label">BORDER</span>
+          <div class="padding-layer">
+            <span class="label padding-label">PADDING</span>
+            <div class="content">CONTENT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="explanation">
+      <p><strong>Content:</strong> The actual text or element content.</p>
+      <p><strong>Padding:</strong> Space between content and border.</p>
+      <p><strong>Border:</strong> The visible edge around padding and content.</p>
+      <p><strong>Margin:</strong> Space outside the border separating elements.</p>
+      <p><strong>box-sizing: border-box:</strong> Width and height include content, padding, and border.</p>
+    </div>
+  </main>
+</body>
+</html>

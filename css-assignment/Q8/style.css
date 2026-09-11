@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #0f172a; }
+main { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem; }
+.demo { outline: 3px dashed #64748b; outline-offset: 12px; margin: 2rem; }
+.margin-layer { padding: 45px; background: #fde68a; position: relative; }
+.border-layer { padding: 25px; background: #fca5a5; border: 15px solid #dc2626; }
+.padding-layer { padding: 30px; background: #93c5fd; }
+.content { width: 220px; height: 110px; display: grid; place-items: center; background: #2563eb; color: white; font-weight: bold; }
+.label { position: absolute; font-size: .7rem; font-weight: bold; color: #0f172a; }
+.margin-label { top: 10px; left: 12px; }
+.border-label { top: 5px; left: 5px; color: white; }
+.padding-label { top: 8px; left: 8px; }
+.explanation { max-width: 700px; text-align: center; line-height: 1.6; }
+.explanation p { margin: .4rem; }

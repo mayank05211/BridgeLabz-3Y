@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f1f5f9; color: #0f172a; }
+main { min-height: 100vh; padding: 7vh 5%; }
+h1 { text-align: center; margin-bottom: 3rem; }
+.boxes { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
+.box {
+  width: 180px; min-height: 150px; margin: .5rem;
+  text-align: center; background: white;
+  transition: border-color .3s ease;
+}
+.box:hover { border-color: #ef4444; }
+.solid { border: 5px solid #2563eb; padding: 10px; }
+.dashed { border: 5px dashed #16a34a; padding: 20px; }
+.double { border: 8px double #9333ea; padding: 30px; }
+.groove { border: 8px groove #ea580c; padding: 15px; }
+.rounded { border: 5px solid #0891b2; border-radius: 30px; padding: 25px; }

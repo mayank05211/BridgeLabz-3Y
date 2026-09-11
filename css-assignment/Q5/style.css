@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #0f172a; }
+main { min-height: 100vh; padding: 6vh 8%; }
+.panel { max-width: 800px; margin: auto; padding: 2rem; background: white; border-radius: 14px; box-shadow: 0 10px 25px rgba(15,23,42,.1); }
+
+/* Attribute selector: targets only text inputs. */
+input[type="text"] { border: 3px solid #2563eb; }
+/* Attribute selector: targets links whose href starts with https. */
+a[href^="https"] { font-weight: bold; color: #dc2626; }
+
+/* Pseudo-class selectors. */
+.items li:hover { background: #dbeafe; }
+input:focus { outline: 3px solid #93c5fd; }
+.items li:nth-child(odd) { background: #f1f5f9; }
+
+/* Pseudo-elements add decorative content. */
+.panel h2::before { content: "◆ "; color: #2563eb; }
+.panel h2::after { content: ""; display: block; width: 50px; height: 3px; margin-top: .4rem; background: #2563eb; }
+
+/* Child combinator: only direct li children of .items. */
+.items > li { padding: .7rem; }
+/* Adjacent sibling combinator: the element immediately after the h2. */
+h2 + .items { border-left: 4px solid #2563eb; padding-left: 1rem; }
+/* General sibling combinator: every .note after .form-area. */
+.form-area ~ .note { margin-top: 2rem; color: #475569; }
+/* Descendant combinator: any a inside .form-area. */
+.form-area a { display: inline-block; margin: 1rem .7rem 0 0; }
+.form-area { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+input { padding: .8rem; border-radius: 8px; border: 2px solid #cbd5e1; }

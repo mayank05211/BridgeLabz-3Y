@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: white; }
+header, footer { position: fixed; left: 0; width: 100%; z-index: 10; text-align: center; background: rgba(15,23,42,.95); padding: 1rem; }
+header { top: 0; } footer { bottom: 0; }
+main { padding-top: 75px; padding-bottom: 70px; }
+section { min-height: 70vh; display: grid; place-items: center; text-align: center; padding: 10%; }
+section p { max-width: 650px; line-height: 1.7; font-size: 1.1rem; }
+.linear { background: linear-gradient(120deg, #2563eb, #9333ea, #db2777); }
+.radial { background: radial-gradient(circle, #f59e0b, #dc2626 55%, #450a0a); }
+.parallax {
+  background-image: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url("https://placehold.co/1600x900/334155/ffffff?text=Parallax");
+  background-size: cover; background-position: center; background-attachment: fixed;
+}

@@ -1,0 +1,19 @@
+* { box-sizing: border-box; scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #0f172a; background: #f8fafc; }
+header { position: sticky; top: 0; z-index: 10; background: #0f172a; }
+nav { display: flex; justify-content: center; align-items: center; }
+nav a {
+  padding: 1.2rem 1.6rem; border: 1px solid #334155;
+  color: white; text-decoration: none;
+  transition: all 0.3s ease;
+}
+nav a:hover { background: #1e3a8a; border-color: #60a5fa; transform: translateY(-2px); }
+nav a.active { background: #2563eb; border-bottom: 4px solid #93c5fd; }
+section { min-height: 55vh; display: grid; place-items: center; text-align: center; padding: 4rem; }
+section:nth-child(even) { background: #e2e8f0; }
+section h1, section h2 { font-size: 2.5rem; }
+footer { padding: 2rem; text-align: center; background: #020617; color: white; }
+@media (max-width: 700px) {
+  nav { flex-direction: column; align-items: stretch; }
+  nav a { text-align: center; width: 100%; }
+}
