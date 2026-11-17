@@ -1,0 +1,29 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+.topbar { display:flex; justify-content:space-between; align-items:center; padding:18px max(4%, calc((100% - 1000px)/2)); background:#18243b; color:white; }
+.topbar a { color:white; text-decoration:none; margin-left:18px; }
+.topbar a:hover { color:#93c5fd; }
+.brand { font-size:1.2rem; font-weight:bold; }
+.main-card { max-width:760px; padding:28px; background:white; border:1px solid #e2e8f0; border-radius:18px; box-shadow:0 12px 35px #1c315018; }
+.welcome { display:flex; align-items:center; gap:22px; margin-bottom:24px; }
+.welcome h1 { margin:0; font-size:1.8rem; }
+.welcome img { width:150px; height:120px; object-fit:cover; border-radius:12px; }
+.eyebrow { color:#4f46e5; font-size:.75rem; letter-spacing:2px; font-weight:bold; }
+form { display:flex; flex-direction:column; gap:9px; }
+form input, form textarea { width:100%; padding:11px 13px; border:1px solid #cbd5e1; border-radius:8px; resize:vertical; }
+form input:focus, form textarea:focus { outline:3px solid #c7d2fe; border-color:#4f46e5; }
+.form-actions { display:flex; gap:10px; margin-top:8px; }
+.form-actions button { padding:11px 18px; border:0; border-radius:8px; background:#4f46e5; color:white; transition:background .2s, transform .2s; }
+.form-actions button:hover { background:#3730a3; transform:translateY(-2px); }
+.form-actions .cancel { background:#64748b; }
+@media(max-width:600px) { .welcome { flex-direction:column; align-items:flex-start; } .welcome img { width:100%; height:170px; } .topbar { flex-direction:column; gap:8px; } .topbar a { margin:0 8px; } }

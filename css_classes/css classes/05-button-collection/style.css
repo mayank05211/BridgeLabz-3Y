@@ -1,0 +1,24 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+.button-panel { min-height:50vh; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:18px; }
+.btn { padding:13px 25px; border-radius:9px; font-weight:bold; border:2px solid transparent; box-shadow:0 4px 10px #1c31501a; transition:background .2s, color .2s, transform .2s, box-shadow .2s; }
+.btn:hover:not(:disabled) { transform:translateY(-3px); box-shadow:0 7px 15px #1c315028; }
+.btn:active:not(:disabled) { transform:scale(.96); }
+.btn:focus-visible { outline:3px solid #93c5fd; outline-offset:3px; }
+.primary { background:#2563eb; color:white; }
+.primary:hover { background:#1d4ed8; }
+.secondary { background:#e2e8f0; color:#243047; }
+.secondary:hover { background:#cbd5e1; }
+.outline { background:transparent; border-color:#2563eb; color:#2563eb; }
+.outline:hover { background:#dbeafe; }
+.disabled, .btn:disabled { background:#cbd5e1; color:#64748b; cursor:not-allowed; box-shadow:none; }

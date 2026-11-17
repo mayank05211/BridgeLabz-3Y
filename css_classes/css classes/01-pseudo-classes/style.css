@@ -1,0 +1,24 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+.examples { display:flex; flex-wrap:wrap; gap:18px; align-items:stretch; }
+.example { flex:1 1 220px; padding:20px; background:white; border-radius:14px; box-shadow:0 5px 18px #1c315014; }
+.example h2 { font-size:1.05rem; }
+.demo-link { color:#2563eb; font-weight:bold; }
+.demo-link:hover { color:#be123c; text-decoration:none; }
+input { width:100%; padding:11px; border:1px solid #b8c4d6; border-radius:8px; }
+input:focus { outline:3px solid #bfdbfe; border-color:#2563eb; background:#eff6ff; }
+.demo-button { padding:10px 16px; border:0; border-radius:8px; background:#2563eb; color:white; }
+.demo-button:active { background:#1e3a8a; transform:scale(.96); }
+.demo-list { padding-left:22px; }
+.demo-list li { padding:5px 8px; border-radius:5px; }
+.demo-list li:nth-child(odd) { background:#dbeafe; }

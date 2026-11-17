@@ -1,0 +1,18 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+.tooltip-row { min-height:55vh; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:55px; }
+.tip-wrap { position:relative; display:inline-block; }
+.tip-item { display:inline-block; padding:16px 22px; background:white; border-radius:12px; box-shadow:0 5px 18px #1c315018; font-weight:bold; cursor:pointer; }
+.tooltip { position:absolute; bottom:calc(100% + 12px); left:50%; transform:translateX(-50%) translateY(6px); width:max-content; max-width:220px; padding:9px 12px; border-radius:7px; background:#18243b; color:white; text-align:center; font-size:.85rem; opacity:0; visibility:hidden; transition:opacity .3s ease-in-out, transform .3s ease-in-out; z-index:2; }
+.tooltip::after { content:""; position:absolute; top:100%; left:50%; border:7px solid transparent; border-top-color:#18243b; }
+.tip-wrap:hover .tooltip, .tip-wrap:focus-within .tooltip { opacity:1; visibility:visible; transform:translateX(-50%) translateY(0); }

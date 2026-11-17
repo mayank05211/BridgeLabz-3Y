@@ -1,0 +1,17 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+.comparison { display:flex; justify-content:center; align-items:stretch; flex-wrap:wrap; gap:30px; }
+.compare-card { flex:1 1 280px; padding:22px; background:white; border-radius:14px; box-shadow:0 5px 18px #1c315014; }
+.box { width:220px; max-width:100%; min-height:130px; margin:18px auto; padding:20px; border:5px solid #243047; display:flex; justify-content:center; align-items:center; text-align:center; font-weight:bold; }
+.content-box { box-sizing:content-box; background:#bfdbfe; }
+.border-box { box-sizing:border-box; background:#bbf7d0; }

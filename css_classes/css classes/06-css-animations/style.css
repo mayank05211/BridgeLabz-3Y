@@ -1,0 +1,20 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+.animation-stage { min-height:55vh; display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:45px; }
+.animation-card { width:250px; min-height:230px; padding:20px; text-align:center; background:white; border-radius:14px; box-shadow:0 5px 18px #1c315014; }
+.moving-box { width:45px; height:45px; margin:25px auto; border-radius:9px; background:#2563eb; animation:slide 2.5s ease-in-out infinite alternate; }
+@keyframes slide { from { transform:translateX(-65px) rotate(0); } to { transform:translateX(65px) rotate(180deg); } }
+.ball { width:42px; height:42px; margin:25px auto; border-radius:50%; background:#f97316; animation:bounce .8s ease-in-out .2s infinite alternate; animation-direction:alternate; }
+@keyframes bounce { from { transform:translateY(-5px); } to { transform:translateY(45px); } }
+.color-text { margin:35px 0; font-size:1.35rem; font-weight:bold; animation:colorShift 3s ease-in-out 1s infinite alternate; }
+@keyframes colorShift { 0% { color:#2563eb; } 50% { color:#db2777; } 100% { color:#059669; } }

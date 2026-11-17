@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CSS Selectors Practice using semantic HTML5 and CSS only">
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>CSS Selectors Practice</h1><p>Examples of common CSS selector types.</p></header>
+<main>
+  <section class="selector-card">
+    <h2>Element selector</h2><p>All paragraphs receive the element selector style.</p>
+    <h2 class="highlight">Class selector</h2><p class="highlight">This paragraph uses the .highlight class.</p>
+    <h2 id="special-heading">ID selector</h2>
+    <p><a href="https://example.com" target="_blank">Attribute selector: link with target="_blank"</a></p>
+  </section>
+  <section class="selector-card">
+    <h2>Combinators</h2>
+    <div class="combinator-demo"><p>Descendant: paragraph inside this div.</p><ul><li>Child selector: direct list item one</li><li>Direct list item two</li></ul><p class="adjacent">Adjacent sibling target</p><p>General sibling target</p><p>Another general sibling target</p></div>
+  </section>
+</main>
+<footer><p>Practice selectors by inspecting the CSS comments.</p></footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+/* Element selector: styles every paragraph. */
+p { color:#59677e; }
+/* Class selector: reusable highlight style. */
+.highlight { background:#fef3c7; padding:8px; border-radius:6px; }
+/* ID selector: styles one unique heading. */
+#special-heading { color:#7c3aed; border-left:4px solid #7c3aed; padding-left:12px; }
+/* Attribute selector: links opening a new tab. */
+a[target="_blank"] { color:#0369a1; text-decoration-thickness:2px; }
+/* Descendant combinator: any paragraph inside this demo. */
+.combinator-demo p { background:#eef2ff; padding:8px; }
+/* Child combinator: only direct list children of the demo. */
+.combinator-demo > ul > li { color:#047857; margin:5px 0; }
+/* Adjacent sibling: the paragraph immediately after the list. */
+.combinator-demo ul + .adjacent { border:2px solid #f59e0b; }
+/* General sibling: all paragraphs after the adjacent paragraph. */
+.adjacent ~ p { color:#be123c; font-weight:bold; }
+.selector-card { background:white; padding:22px; margin:18px 0; border-radius:12px; box-shadow:0 5px 18px #1c315014; }

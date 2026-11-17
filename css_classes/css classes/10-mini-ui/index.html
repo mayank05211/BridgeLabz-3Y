@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mini User Interface Layout using semantic HTML5 and CSS only">
+  <title>Mini User Interface Layout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#">BrightSpace</a><nav><a href="#main-card">Home</a><a href="#contact">Contact</a></nav></header>
+<main id="main-card" class="main-card">
+  <section class="welcome"><div><p class="eyebrow">WELCOME BACK</p><h1>Make today productive.</h1><p>Use this mini dashboard to send a quick message.</p></div><img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600" alt="Bright modern workspace"></section>
+  <form action="#" method="get">
+    <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+    <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+    <label for="message">Message</label><textarea id="message" name="message" rows="3" placeholder="Write a short message"></textarea>
+    <div class="form-actions"><button type="submit">Send message</button><button class="cancel" type="reset">Clear form</button></div>
+  </form>
+</main>
+<footer id="contact"><p>© 2026 BrightSpace • A CSS mini project</p></footer>
+</body>
+</html>

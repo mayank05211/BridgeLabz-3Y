@@ -1,0 +1,20 @@
+/* Shared base styles */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #18243b; }
+header p, footer p { margin: 0; color: #66738a; }
+main { width: min(1100px, 92%); margin: 24px auto 48px; }
+footer { border-top: 1px solid #e0e6ef; }
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+
+/* Page-specific styles */
+.effect-row { display:flex; justify-content:space-evenly; align-items:stretch; flex-wrap:wrap; gap:22px; }
+.effect-card { flex:1 1 230px; padding:25px; text-align:center; background:white; border-radius:16px; box-shadow:0 5px 18px #1c315014; transition:transform .3s ease, box-shadow .3s ease; }
+.effect-card:hover { transform:translateY(-7px); box-shadow:0 13px 25px #1c315025; }
+.symbol { font-size:2rem; color:#4f46e5; }
+.effect-card button { padding:11px 18px; color:white; background:#4f46e5; border:0; border-radius:8px; transition:transform .25s ease, background .25s ease, box-shadow .25s ease; }
+.effect-card button:hover { background:#7c3aed; transform:scale(1.07); box-shadow:0 5px 13px #4f46e544; }
+.effect-card button:focus-visible { outline:3px solid #a5b4fc; outline-offset:4px; }
+.effect-card button:active { transform:scale(.97); }

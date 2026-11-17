@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Box-Sizing Comparison using semantic HTML5 and CSS only">
+  <title>Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Box-Sizing Comparison</h1><p>Compare the default content-box model with border-box.</p></header>
+<main class="comparison">
+  <section class="compare-card"><h2>content-box</h2><div class="box content-box">Width: 220px<br>Padding: 20px<br>Border: 5px</div><p>Total width = 220 + 40 + 10 = <strong>270px</strong>.</p></section>
+  <section class="compare-card"><h2>border-box</h2><div class="box border-box">Width: 220px<br>Padding: 20px<br>Border: 5px</div><p>Total width stays <strong>220px</strong>; padding and border fit inside the width.</p></section>
+</main>
+<footer><p>Both examples use the same declared width, padding, and border.</p></footer>
+</body>
+</html>
