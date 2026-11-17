@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dynamic Object Updater</title>
+<style>body{font-family:Arial,sans-serif;max-width:520px;margin:30px auto;padding:0 16px}
+label{display:block;margin:12px 0 5px}input{width:100%;box-sizing:border-box;padding:9px}
+button{margin-top:16px;padding:10px 18px}pre{background:#f3f3f3;padding:12px}</style>
+</head>
+<body><h1>Edit User Details</h1>
+<form id="userForm">
+<label>Name <input name="name" required></label>
+<label>Email <input name="email" type="email" required></label>
+<label>Age <input name="age" type="number" min="0" required></label>
+<button type="submit">Update User</button>
+</form>
+<h2>Updated User Object</h2><pre id="userDetails"></pre>
+<script src="Q8_Dynamic_Object_Updater.js"></script></body></html>
