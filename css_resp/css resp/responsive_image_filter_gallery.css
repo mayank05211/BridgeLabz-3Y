@@ -1,0 +1,18 @@
+/* Global reset and accessible defaults */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #172554; }
+header p, footer p { margin: 0; color: #64748b; }
+main { width: min(1100px, 92%); margin: 28px auto 48px; }
+footer { border-top: 1px solid #dbe3ef; }
+a { transition: color .2s ease; }
+
+/* Page-specific layout, effects, and breakpoints */
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px}
+figure{margin:0;padding:10px;background:white;border-radius:13px;box-shadow:0 5px 18px #17255418;overflow:hidden}
+img{display:block;width:100%;height:190px;object-fit:cover;border-radius:9px;transition:filter .4s ease,transform .4s ease}
+figcaption{text-align:center;padding:10px 0 2px;font-weight:bold}
+.blur{filter:blur(2px)} .grayscale{filter:grayscale(1)} .sepia{filter:sepia(1)} .brightness{filter:brightness(1.5)} .contrast{filter:contrast(1.8)} .hue{filter:hue-rotate(130deg)}
+figure:hover img{filter:none;transform:scale(1.03)}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}}

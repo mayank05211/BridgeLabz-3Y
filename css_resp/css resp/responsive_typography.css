@@ -1,0 +1,18 @@
+/* Global reset and accessible defaults */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #172554; }
+header p, footer p { margin: 0; color: #64748b; }
+main { width: min(1100px, 92%); margin: 28px auto 48px; }
+footer { border-top: 1px solid #dbe3ef; }
+a { transition: color .2s ease; }
+
+/* Page-specific layout, effects, and breakpoints */
+.type-demo{min-height:65vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:50px 8%}
+.type-demo section{max-width:850px}
+h1{font-size:clamp(1.5rem,4vw,3rem);line-height:1.15;color:#172554}
+p{font-size:clamp(1rem,2vw,1.5rem)}
+.eyebrow{font-size:.85rem;letter-spacing:3px;color:#4f46e5;font-weight:bold}
+.intro{line-height:1.7;color:#53627a}
+@media(max-width:700px){.type-demo{padding:30px 6%}.intro{line-height:1.6;margin-top:18px}}

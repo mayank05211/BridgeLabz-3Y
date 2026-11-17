@@ -1,0 +1,17 @@
+/* Global reset and accessible defaults */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #172554; }
+header p, footer p { margin: 0; color: #64748b; }
+main { width: min(1100px, 92%); margin: 28px auto 48px; }
+footer { border-top: 1px solid #dbe3ef; }
+a { transition: color .2s ease; }
+
+/* Page-specific layout, effects, and breakpoints */
+.cheat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.topic{padding:24px;background:white;border-radius:13px;box-shadow:0 5px 18px #17255412;transition:transform .25s,background .25s}
+.topic:hover{transform:translateY(-5px);background:#eef2ff}
+.topic h2{margin-top:0;color:#3730a3}
+code{display:block;white-space:normal;background:#e2e8f0;padding:10px;border-radius:7px;color:#172554}
+@media(max-width:700px){.cheat-grid{grid-template-columns:1fr}.topic{display:flex;flex-direction:column;gap:6px}.topic h2{margin-bottom:0}}

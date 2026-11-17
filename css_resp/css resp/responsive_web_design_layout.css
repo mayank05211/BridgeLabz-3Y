@@ -1,0 +1,19 @@
+/* Global reset and accessible defaults */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #172554; }
+header p, footer p { margin: 0; color: #64748b; }
+main { width: min(1100px, 92%); margin: 28px auto 48px; }
+footer { border-top: 1px solid #dbe3ef; }
+a { transition: color .2s ease; }
+
+/* Page-specific layout, effects, and breakpoints */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:#172554;color:white}
+.logo{font-size:1.4rem;font-weight:bold;color:white;text-decoration:none}
+nav{display:flex;gap:22px}nav a{color:white;text-decoration:none}nav a:hover{color:#93c5fd}
+main{display:flex;gap:22px;padding:55px 6%;align-items:stretch}
+.feature{flex:1;padding:30px;background:white;border-radius:14px;box-shadow:0 5px 18px #17255416;transition:transform .25s}
+.feature:hover{transform:scale(1.04)}
+footer{text-align:center;padding:20px;background:#e2e8f0}
+@media(max-width:750px){main{flex-direction:column}.topbar{gap:15px;flex-wrap:wrap}nav{flex-wrap:wrap}}

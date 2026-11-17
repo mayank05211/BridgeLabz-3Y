@@ -1,0 +1,18 @@
+/* Global reset and accessible defaults */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #172554; }
+header p, footer p { margin: 0; color: #64748b; }
+main { width: min(1100px, 92%); margin: 28px auto 48px; }
+footer { border-top: 1px solid #dbe3ef; }
+a { transition: color .2s ease; }
+
+/* Page-specific layout, effects, and breakpoints */
+.comparison{display:flex;gap:25px;align-items:flex-start}
+figure{flex:1;margin:0;padding:12px;background:white;border-radius:14px;box-shadow:0 5px 18px #17255414}
+figure img{display:block;width:100%;height:300px;object-fit:cover;border-radius:9px}
+figure .filtered{filter:brightness(.65) contrast(1.4);transition:filter .4s ease}
+figure:hover .filtered{filter:none}
+figcaption{text-align:center;padding:12px 4px;font-weight:bold}
+@media(max-width:700px){.comparison{flex-direction:column}figure{width:100%}figure img{height:230px}}

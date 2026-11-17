@@ -1,0 +1,22 @@
+/* Global reset and accessible defaults */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #243047; background: #f3f6fb; line-height: 1.6; }
+header, footer { text-align: center; padding: 24px 18px; }
+header h1 { margin: 0 0 6px; color: #172554; }
+header p, footer p { margin: 0; color: #64748b; }
+main { width: min(1100px, 92%); margin: 28px auto 48px; }
+footer { border-top: 1px solid #dbe3ef; }
+a { transition: color .2s ease; }
+
+/* Page-specific layout, effects, and breakpoints */
+.dashboard-header{text-align:left;padding:25px 6%;background:#172554;color:white}
+.dashboard-header h1{color:white;margin:0}.dashboard-header p{color:#cbd5e1;margin:4px 0 0}
+.dashboard-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:22px}
+.sidebar{padding:22px;background:#e0e7ff;border-radius:13px;display:flex;flex-direction:column;gap:13px}
+.sidebar a{color:#3730a3;text-decoration:none;font-weight:bold}.sidebar a:hover{text-decoration:underline}
+.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.dash-card{padding:22px;background:white;border-radius:13px;box-shadow:0 5px 18px #17255412;animation:appear .7s ease both;transition:transform .25s,box-shadow .25s}
+.dash-card:hover{transform:scale(1.025);box-shadow:0 10px 25px #17255420}
+.dash-card h2{margin-top:0;color:#3730a3}.dash-card code{overflow-wrap:anywhere}
+@keyframes appear{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:750px){.dashboard-layout{grid-template-columns:1fr}.sidebar{order:-1}.main-content{grid-template-columns:1fr}}
