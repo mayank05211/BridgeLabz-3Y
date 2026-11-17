@@ -1,0 +1,4 @@
+/* Small custom styles complement Bootstrap 5 utilities and components. */
+body { font-family: var(--bs-font-sans-serif); color: #243047; }
+img { max-width: 100%; }
+\n/* Page-specific customizations */\n.task-wrap { max-width: 760px; } .list-group-item { padding: 1.1rem; }\n

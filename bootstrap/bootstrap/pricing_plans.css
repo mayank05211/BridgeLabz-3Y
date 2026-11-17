@@ -1,0 +1,4 @@
+/* Small custom styles complement Bootstrap 5 utilities and components. */
+body { font-family: var(--bs-font-sans-serif); color: #243047; }
+img { max-width: 100%; }
+\n/* Page-specific customizations */\n.pricing-card { border: 1px solid #e1e6ef; transition: transform .25s ease, box-shadow .25s ease; } .pricing-card:hover { transform: translateY(-7px); box-shadow: 0 1rem 2rem rgba(0,0,0,.15) !important; } .pro-card { border-color: var(--bs-primary); }\n

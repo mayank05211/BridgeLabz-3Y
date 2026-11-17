@@ -1,0 +1,4 @@
+/* Small custom styles complement Bootstrap 5 utilities and components. */
+body { font-family: var(--bs-font-sans-serif); color: #243047; }
+img { max-width: 100%; }
+\n/* Page-specific customizations */\n:root { --bs-primary: #7254a6; --bs-font-sans-serif: 'DM Sans', sans-serif; } body { font-family: 'DM Sans', sans-serif; } .blog-header, .blog-footer { background: #f2edf8; } .blog-header a, .blog-header nav a { color: #49356f; text-decoration: none; } .theme-badge { background: #7254a6; } .theme-text { color: #7254a6; } .btn-theme { background: #7254a6; color: white; } .btn-theme:hover { background: #543b83; color: white; } .blog-card { border: 0; box-shadow: 0 5px 18px rgba(40,20,70,.08); } .blog-card img { height: 230px; object-fit: cover; }\n

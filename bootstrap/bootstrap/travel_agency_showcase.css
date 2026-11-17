@@ -1,0 +1,4 @@
+/* Small custom styles complement Bootstrap 5 utilities and components. */
+body { font-family: var(--bs-font-sans-serif); color: #243047; }
+img { max-width: 100%; }
+\n/* Page-specific customizations */\n.destination-image { height: 520px; object-fit: cover; } .carousel-caption { background: rgba(0,0,0,.38); border-radius: .75rem; padding: 1rem; } @media (max-width: 600px) { .destination-image { height: 330px; } .carousel-caption p { display: none; } }\n

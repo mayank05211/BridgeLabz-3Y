@@ -1,0 +1,4 @@
+/* Small custom styles complement Bootstrap 5 utilities and components. */
+body { font-family: var(--bs-font-sans-serif); color: #243047; }
+img { max-width: 100%; }
+\n/* Page-specific customizations */\n.summary-well { min-height: 240px; }\n
